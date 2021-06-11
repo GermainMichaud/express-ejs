@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<h1>Contact</h1>
+<%= locals.username %>
+<form action="/contact" method="POST">
+  <div>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" />
+  </div>
+  <button>Envoyer</button>
+</form>
+<%- include('partials/footer') %>
